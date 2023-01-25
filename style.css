@@ -1,14 +1,22 @@
-/* font-family: 'EB Garamond', serif;
-font-family: 'Poppins', sans-serif; */
-
 body{
     font-family: 'Poppins', sans-serif;
 }
 h1,h2,h3{
     font-family: 'EB Garamond', serif;
 }
-.header-btn{
+.common-btn{
     font-size: 18px;
     background: #B68C5A;
-    
+}
+.banner::before{
+    content: '';
+    background: linear-gradient(180deg, #111111 0%, rgba(17, 17, 17, 0) 100%);
+    position: absolute;
+    transform: rotate(-180deg);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
 }

@@ -1,0 +1,14 @@
+/* font-family: 'EB Garamond', serif;
+font-family: 'Poppins', sans-serif; */
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+h1,h2,h3{
+    font-family: 'EB Garamond', serif;
+}
+.header-btn{
+    font-size: 18px;
+    background: #B68C5A;
+    
+}

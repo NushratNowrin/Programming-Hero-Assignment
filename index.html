@@ -18,10 +18,9 @@
     <link rel="stylesheet" href="Bootstrap/bootstrap.min.css">
 
     <!-- linking external css -->
-    <link rel="stylesheet" href="style.css">
-
-   
+    <link rel="stylesheet" href="style.css"> 
 </head>
+
 <body class="text-secondary">
     <!-- Header Section -->
     <header class="container mt-5 mb-5">
@@ -36,20 +35,44 @@
                   <li class="nav-item p-3">
                     <a class="nav-link" href="#">Home</a>
                   </li>
-                  <li class="nav-item p-3">
+                  <li class="nav-item p-3 d-flex">
                     <a class="nav-link" href="#">Service</a>
+                    <img src="images/greater-than-solid.png" alt="" class="py-2 mx-2">
                   </li>
-                  <li class="nav-item p-3">
+                  <li class="nav-item p-3 d-flex">
                     <a class="nav-link" href="#">Cases</a>
+                    <img src="images/greater-than-solid.png" alt="" class=" py-2 mx-2">
                   </li>
-                  <li class="nav-item p-3">
+                  <li class="nav-item p-3 d-flex">
                     <a class="nav-link" href="#">Blog</a>
+                    <img src="images/greater-than-solid.png" alt="" class="py-2 mx-2">
                   </li>
-                  <li class="nav-item p-3">
+                  <li class="nav-item p-3 d-flex">
                     <a class="nav-link" href="#">Contact Us</a>
+                    <img src="images/greater-than-solid.png" alt="" class="py-2 mx-2">
                   </li>
                 </ul>
-                  <button class="btn btn-danger fw-bold common-btn px-5 py-4 border-0 rounded-3">Free Consultation</button>
+                  <button class="btn btn-danger fw-bold common-btn px-5 py-4 border-0 rounded-3" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Free Consultation
+                  </button>
+                      <!-- Modal -->
+                      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                          <div class="modal-content">
+                            <div class="modal-header">
+                              <h5 class="modal-title" id="exampleModalLabel">Please Contact with us</h5>
+                              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            </div>
+                            <div class="modal-body">
+                              ...
+                            </div>
+                            <div class="modal-footer">
+                              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Later</button>
+                              <button type="button" class="btn btn-primary">Contact Immediately</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
               </div>
             </div>
           </nav>
@@ -58,14 +81,14 @@
      <!-- Main Section -->
     <main class="container-lg">
         <!-- banner section -->
-        <section class="bg-image p-5 text-center rounded-3 text-white d-flex flex-column align-items-center justify-content-center banner mb-5" style="background-image: url(images/banner.png);background-position: center center; background-repeat: no-repeat; background-size: cover; min-height: 60vh;position: relative;">
+        <section class="bg-image p-lg-5 text-center rounded-3 text-white d-flex flex-column align-items-center justify-content-center banner mb-5" style="background-image: url(images/banner.png);background-position: center center; background-repeat: no-repeat; background-size: cover; min-height: 60vh;position: relative;">
           <div class=" text-center" style="z-index:3;">
             <h1 class="fw-bold m-3" style="font-size: 72px;">We Provide Effective<br>Legal Solutions</h1>
             <p class="w-75 mx-auto">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
           </div>
-          <div class="w-50 input-group m-3 mx-auto" style="z-index:3;">
-            <input type="search" class="form-control d-sm-flex rounded px-5 p-3" placeholder="Search your service" aria-label="Search" aria-describedby="search-addon" />
-            <button type="button" class="btn px-5 py-3 btn-danger fw-bold common-btn border-0 rounded mx-3 ">search</button>
+          <div class="w-50 input-group m-3 mx-auto justify-content-center" style="z-index:3;">
+            <input type="search" class="form-control d-sm-flex rounded px-5 p-3 mt-2" placeholder="Search your service" aria-label="Search" aria-describedby="search-addon" />
+            <button type="button" class="btn px-lg-5 py-3 btn-danger fw-bold common-btn border-0 rounded mx-1 mx-lg-3 mt-2">search</button>
           </div>
         </section>
 
@@ -78,8 +101,8 @@
 
           <!-- Card -->
           <section class="mb-5">
-            <div class="my-card row justify-content-center" style="">
-            <div class="card text-center col-12 col-md-2 col-lg-3" style="width: 25rem;">
+            <div class="my-card row justify-content-center">
+            <div class="card text-center col-12 col-md-6 col-lg-4" style="width: 25rem;">
               <div>
                 <img src="images/business.png" class="card-img-top w-25 m-5" alt="Business">
               </div>
@@ -90,61 +113,61 @@
               </div>
             </div>
           
-            <div class="card text-center col-12 col-md-2 col-lg-3" style="width: 25rem;">
+            <div class="card text-center col-12 col-md-6 col-lg-4" style="width: 25rem;">
               <div>
               <div>
-                <img src="images/business.png" class="card-img-top w-25 m-5" alt="Business">
+                <img src="images/criminal.png" class="card-img-top w-25 m-5" alt="Criminal">
               </div>
               <div class="card-body">
-                <h3 class="card-title fs-2 text-dark fw-bolder">Business Law</h3>
+                <h3 class="card-title fs-2 text-dark fw-bolder">Criminal Law</h3>
                 <p class="card-text p-4">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
                 <img src="images/Frame.png" alt="Frame" class="mb-5">
                 </div>
               </div>
           </div>
       
-            <div class="card text-center col-12 col-md-2 col-lg-3" style="width: 25rem;">
+            <div class="card text-center col-12 col-md-6 col-lg-4" style="width: 25rem;">
               <div>
-                <img src="images/business.png" class="card-img-top w-25 m-5" alt="Business">
+                <img src="images/child.png" class="card-img-top w-25 m-5" alt="Child">
               </div>
               <div class="card-body">
-                <h3 class="card-title fs-2 text-dark fw-bolder">Business Law</h3>
+                <h3 class="card-title fs-2 text-dark fw-bolder">Child Law</h3>
                 <p class="card-text p-4">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
                 <img src="images/Frame.png" alt="Frame" class="mb-5">
               </div>
             </div>
             
             
-              <div class="card text-center col-12 col-md-2 col-lg-3" style="width: 25rem;">
+              <div class="card text-center col-12 col-md-6 col-lg-4" style="width: 25rem;">
                 <div>
-                  <img src="images/business.png" class="card-img-top w-25 m-5" alt="Business">
+                  <img src="images/education.png" class="card-img-top w-25 m-5" alt="Education">
                 </div>
                 <div class="card-body">
-                  <h3 class="card-title fs-2 text-dark fw-bolder">Business Law</h3>
+                  <h3 class="card-title fs-2 text-dark fw-bolder">Education Law</h3>
                   <p class="card-text p-4">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
                   <img src="images/Frame.png" alt="Frame" class="mb-5">
                 </div>
               </div>
             
-              <div class="card text-center col-12 col-md-2 col-lg-3" style="width: 25rem;">
+              <div class="card text-center col-12 col-md-6 col-lg-4" style="width: 25rem;">
                 <div>
                 <div>
-                  <img src="images/business.png" class="card-img-top w-25 m-5" alt="Business">
+                  <img src="images/divorce.png" class="card-img-top w-25 m-5" alt="Divorce">
                 </div>
                 <div class="card-body">
-                  <h3 class="card-title fs-2 text-dark fw-bolder">Business Law</h3>
+                  <h3 class="card-title fs-2 text-dark fw-bolder">Divorce Law</h3>
                   <p class="card-text p-4">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
                   <img src="images/Frame.png" alt="Frame" class="mb-5">
                   </div>
                 </div>
             </div>
         
-              <div class="card text-center col-12 col-md-2 col-lg-3" style="width: 25rem;">
+              <div class="card text-center col-12 col-md-6 col-lg-4" style="width: 25rem;">
                 <div>
-                  <img src="images/business.png" class="card-img-top w-25 m-5" alt="Business">
+                  <img src="images/tax.png" class="card-img-top w-25 m-5" alt="Tax">
                 </div>
                 <div class="card-body">
-                  <h3 class="card-title fs-2 text-dark fw-bolder">Business Law</h3>
+                  <h3 class="card-title fs-2 text-dark fw-bolder">Tax Law</h3>
                   <p class="card-text p-4">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
                   <img src="images/Frame.png" alt="Frame" class="mb-5">
                 </div>
@@ -160,9 +183,9 @@
           <p class=" mb-5 w-75 mx-auto">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
           </div>
         <!-- Carousel -->
-          <section class="h-100">
-            <section class="rounded-3 my-carousel" style="position: relative; max-height: 75%;">
-              <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          
+            <section class="rounded-3">
+              <div id="carouselExampleCaptions" class="carousel slide overflow-hidden" style="position: relative; " data-bs-ride="carousel">
                 <div class="carousel-indicators">
                   <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                   <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -170,22 +193,22 @@
                 </div>
                 <div class="carousel-inner">
                   <div class="carousel-item active">
-                    <img src="images/slider-1.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
+                    <img src="images/slider-1.jpg" class="d-block w-100" style="max-height: 568.76px;" alt="...">
+                    <div class="carousel-caption d-block position-absolute top-50 start-50  translate-middle">
                       <h5>First slide label</h5>
                       <p>Some representative placeholder content for the first slide.</p>
                     </div>
                   </div>
                   <div class="carousel-item">
-                    <img src="images/slider-2.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
+                    <img src="images/slider-2.jpg" class="d-block w-100" alt="..." style="max-height: 568.76px;">
+                    <div class="carousel-caption d-block">
                       <h5>Second slide label</h5>
                       <p>Some representative placeholder content for the second slide.</p>
                     </div>
                   </div>
                   <div class="carousel-item">
-                    <img src="images/slider-3.jpg" class="d-block w-100" alt="...">
-                    <div class="carousel-caption d-none d-md-block">
+                    <img src="images/slider-3.jpg" class="d-block w-100" alt="..." style="max-height: 568.76px;">
+                    <div class="carousel-caption d-block">
                       <h5>Third slide label</h5>
                       <p>Some representative placeholder content for the third slide.</p>
                     </div>
@@ -201,19 +224,155 @@
                 </button>
               </div>
             </section>
-          </section>
+          
         </section>
 
         <!-- FAQ -->
+        <section class="mt-5">
+          <div class="text-center mx-auto w-75">
+          <h2 class="text-dark fw-bold pt-5 mb-4 fs-1">Frequently Asked Any Questions</h2>
+          <p class=" mb-5 w-75 mx-auto">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+          </div>
 
+  
+          <div class="row p-3">
+            <div class="col-12 col-lg-6">
+
+              <!-- Accordian -->
+              <div class="accordion" id="accordionExample">
+                <div class="accordion-item border-0 mb-4 rounded-3">
+                  <h2 class="accordion-header " id="headingOne">
+                    <button class="accordion-button text-dark fw-bold fs-4 p-4 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne" style="background: #F3F3F3">
+                      1. What is the difference between Flexbox & Grid?
+                    </button>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                    <div class="accordion-body" style="background: #F3F3F3">
+                      <p>
+                        <ul>
+                        <li>Flexbox is designed for one-dimensional layouts, and Grid for two-dimensional layouts.</li>
+                        <li>Flexbox focuses on content flow, content first. While Grid focuses on content placement, layout first.</li>
+                        <li>The Flexbox layout is best suited for small design implementation, need to align element and need a content first design, while the Grid layout is designed for complex design implementation, need to have a gap between block elements, need to overlap elements, need a layout first design.</li>
+                        </ul>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item border-0 mb-4 rounded-3">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button collapsed text-dark fw-bold fs-4 p-4 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo" style="background: #F3F3F3">
+                      What is the purpose of Media Query?
+                    </button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                    <div class="accordion-body" style="background: #F3F3F3">
+                      The media query is used to apply different styles for different media devices. Media queries are a feature of CSS that enable webpage content to adapt to different screen sizes and resolutions. They are a fundamental part of responsive web design and are used to customize the appearance of websites for multiple devices.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item border-0 mb-4 rounded-3">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button collapsed text-dark fw-bold fs-4 p-4 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree" style="background: #F3F3F3">
+                      What is CSS box-model? How does it work?
+                    </button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                    <div class="accordion-body" style="background: #F3F3F3">
+                      The CSS box model is a container that contains multiple properties including borders, margin, padding, and the content itself.The content of the box, where text and images appear. Padding clears an area around the content. The padding is transparent
+                      A border that goes around the padding and content.
+                      Margin clears an area outside the border. The margin is also transparent.
+                    </div>
+                  </div>
+                </div>
+                <div class="accordion-item border-0 mb-4 rounded-3">
+                  <h2 class="accordion-header" id="headingFour">
+                    <button class="accordion-button collapsed text-dark fw-bold fs-4 p-4 border-0" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour" style="background: #F3F3F3">
+                      What is Semantic tag?
+                    </button>
+                  </h2>
+                  <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                    <div class="accordion-body" style="background: #F3F3F3">
+                     
+                      Semantic HTML tags are tags that define the meaning of the content they contain. A semantic element clearly describes its meaning to both the browser and the developer. Examples of non-semantic elements: div and span - Tells nothing about its content. Examples of semantic elements: form, table, header, footer - Clearly defines its content.
+                    </div>
+                  </div>
+                </div>
+              
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <img src="images/faq.png" alt="FAQ" class="img-fluid">
+
+            </div>
+          </div>
+
+        </section>
         <!-- Contact Us -->
 
         <!-- Extra -->
     </main>
     
      <!-- Footer Section -->
-    <footer>
+    <footer class="container-fluid bg-dark mt-5">
+        <section class="mx-5 p-sm-3">
+          <div class="row text-white justify-content-between p-sm-5">
+            <div class="col-12 col-md-6 col-lg-3 p-5">
+              <img src="images/logo.png" alt="" class="mb-5">
+              <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour.</p>
+            </div>
 
+            <div class="col-12 col-md-6 col-lg-3 p-5">
+              <h3 class="fw-bold">Usefull Link</h3>
+              <div>
+                <ul class="navbar-nav my-5">
+                  <li class="nav-item p-1">
+                    <a class="nav-link text-white" href="#">Home</a>
+                  </li>
+                  <li class="nav-item p-1">
+                    <a class="nav-link text-white" href="#">Service</a>
+                  </li>
+                  <li class="nav-item p-1">
+                    <a class="nav-link text-white" href="#">Cases</a>
+                  </li>
+                  <li class="nav-item p-1">
+                    <a class="nav-link text-white" href="#">Blog</a>
+                  </li>
+                  <li class="nav-item p-1">
+                    <a class="nav-link text-white" href="#">Contact Us</a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-lg-3 p-5">
+              <h3 class="fw-bold">Contact Now</h3>
+              <div class="my-5 p-1">
+                <p>
+                  555 4th 5t NW, Washington DC 20530, United States
+                </p>
+                <p>
+                  +88 01750 000 000<br>
+                  +88 01750 000 000
+                </p>
+                <p>
+                  info@gmail.com<br>
+                  info@gmail.com
+                </p>
+              </div>
+            </div>
+            <div class="col-12 col-md-6 col-lg-3 p-5">
+              <h3 class="fw-bold">Subscribe</h3>
+              <div class="my-5">
+                <p>Subscribe for our latest & Articles. We Won’t Give You Spam Mails</p>
+                <div class="input-group m-3 mx-auto">
+                  <input type="email" class="form-control d-flex rounded-start-5 px-5 p-3 mt-2" placeholder="Email Address" aria-label="Email" aria-describedby="email-addon" />
+                  <button type="button" class="btn p-4 btn-danger fw-bold common-btn border-0 rounded-5 mt-2"><img src="images/paper-plane.png" alt=""></button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </section>
     </footer>
 
 

@@ -8,6 +8,10 @@ h1,h2,h3{
     font-size: 18px;
     background: #B68C5A;
 }
+.nav-item img{
+    width: 14px;
+    height: 40px;
+}
 .banner::before{
     content: '';
     background: linear-gradient(180deg, #111111 0%, rgba(17, 17, 17, 0) 100%);
@@ -20,14 +24,25 @@ h1,h2,h3{
     width: 100%;
     z-index: 1;
 }
-.my-carousel::before{
-    background: linear-gradient(180deg, #111111 0%, rgba(17, 17, 17, 0) 100%);
-    position: absolute;
-    transform: rotate(-180deg);
-    top: 0;
-    bottom: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    z-index: 1;
+.card:hover{
+    background: linear-gradient(180deg, #F3F3F3 0%, rgba(243, 243, 243, 0) 100%);
+}
+
+.card-img-top{
+    height: 80px;
+    width: auto;
+}
+
+.accordion-button::after {
+    
+    background-image: url('images/plus-solid.svg');
+    background-repeat: no-repeat;
+    background-size: 1.25rem;
+    transition: transform .2s ease-in-out;
+}
+.accordion-button:not(.collapsed)::after {
+    background-image: url('images/minus-solid.svg');
+}
+footer img{
+    height: 24px;
 }

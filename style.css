@@ -1,7 +1,7 @@
 body{
     font-family: 'Poppins', sans-serif;
 }
-h1,h2,h3{
+h1,h2,h3,h4{
     font-family: 'EB Garamond', serif;
 }
 .common-btn{
@@ -24,13 +24,24 @@ h1,h2,h3{
     width: 100%;
     z-index: 1;
 }
-.card:hover{
+.my-card:hover{
     background: linear-gradient(180deg, #F3F3F3 0%, rgba(243, 243, 243, 0) 100%);
 }
 
 .card-img-top{
     height: 80px;
     width: auto;
+}
+
+.carousel-item::before{
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.6);
 }
 
 .accordion-button::after {
@@ -43,6 +54,7 @@ h1,h2,h3{
 .accordion-button:not(.collapsed)::after {
     background-image: url('images/minus-solid.svg');
 }
-footer img{
+
+.paper-plane-img{
     height: 24px;
 }
